@@ -461,112 +461,117 @@ body {
 
   /* Education */
 
-  .timeline-section{
-    font-family: 'Poppins', sans-serif;
-    padding-top: 66px;
-    padding-bottom: 15px;
+.timeline-section{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 66px;
+  padding-bottom: 15px;
   
-  }
-  .timeline-section h1{
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 30px;
-    font-weight: 700;
-  }
+}
+.timeline-section h1{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
   
-  .timeline-section{
-    background-color: #24292d;
-    min-height: 100vh;
-    padding: 100px 15px;
+.timeline-section{
+  background-color: #24292d;
+  min-height: 100vh;
+  padding: 100px 15px;
+}
+.timeline-items{
+  max-width: 1000px;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 30px;
   }
-  .timeline-items{
-    max-width: 1000px;
-    margin:auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    padding-top: 30px;
-  }
-  .timeline-items::before{
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background-color: #2f363e;
-    left: calc(50% - 1px);
-  }
-  .timeline-item{
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
-  }
-  .timeline-item:last-child{
-    margin-bottom: 0;
-  }
-  .timeline-item:nth-child(odd){
-      padding-right: calc(50% + 30px);
-    text-align: right;
-  }
-  .timeline-item:nth-child(even){
-      padding-left: calc(50% + 30px);
-  }
-  .timeline-dot{
-    height: 16px;
-    width: 16px;
-    background-color: #eaa023;
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top:10px;
-  }
-  .timeline-date{
-    font-size: 18px;
-    color: #eaa023;
-    margin:6px 0 15px;
-  }
-  .timeline-content{
-      background-color: #2f363e;
-    padding: 30px;
-    border-radius: 5px;
-  }
-  .timeline-content h3{
-      font-size: 20px;
-    color: #ffffff;
-    margin:0 0 10px;
-    text-transform: capitalize;
-    font-weight: 500;
-  }
-  .timeline-content p{
-      color: #c8c8c8;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-  }
+.timeline-items::before{
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #2f363e;
+  left: calc(50% - 1px);
+}
+.timeline-item{
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child{
+  margin-bottom: 0;
+}
 
-  .timeline-section details{
-    padding-top: 40px;
-    text-align: center;
-    color: rebeccapurple;
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even){
+  padding-left: calc(50% + 30px);
+}
 
-  }
+.timeline-dot{
+  height: 16px;
+  width: 16px;
+  background-color: #eaa023;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top:10px;
+}
 
-  .details{
-    color: red;
-    padding-top: 60px;
-    text-align: center;
-  }
-  .details .more{
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50px;
-  }
+.timeline-date{
+  font-size: 18px;
+  color: #eaa023;
+  margin:6px 0 15px;
+}
+
+.timeline-content{
+  background-color: #2f363e;
+  padding: 30px;
+  border-radius: 5px;
+}
+.timeline-content h3{
+  font-size: 20px;
+  color: #ffffff;
+  margin:0 0 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.timeline-content p{
+  color: #c8c8c8;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.timeline-section details{
+  padding-top: 40px;
+  text-align: center;
+  color: rebeccapurple;
+
+}
+
+.details{
+  color: red;
+  padding-top: 60px;
+  text-align: center;
+}
+.details .more{
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+}
   
 
 
@@ -1053,6 +1058,32 @@ textarea.contact-input {
   
 
   /**
+   * Education
+   */
+
+   .timeline-section{
+  
+    left: 7px;
+
+  }
+  .timeline-items::before{
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd){
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
+    padding-left: 37px;
+  }
+  .timeline-dot{
+    left:0;
+  }
+
+
+
+  /**
    * FOOTER
    */
 
@@ -1064,5 +1095,8 @@ textarea.contact-input {
 
   .copyright,
   .footer-list { margin-inline: 0; }
+
+
+
 
 }
